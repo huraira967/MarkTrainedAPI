@@ -5,6 +5,7 @@ using MarkTrainedAPI.Services.Foundation.FacilitySettings;
 using MarkTrainedAPI.Services.Foundation.Signatures;
 using MarkTrainedAPI.Services.Foundation.TrainingPolicies;
 using MarkTrainedAPI.Services.Foundation.UserService;
+using MarkTrainedAPI.Services.Orchestration.UserTrainingOrchestration;
 
 namespace MarkTrainedAPI.Services.Orchestration
 {
@@ -27,6 +28,8 @@ namespace MarkTrainedAPI.Services.Orchestration
             this.userService = userService;
         }
 
+
+        //complete implementation will be here
         public ValueTask<UserTraining> ChangeUserTrainingStatus(UserTrainingStatusChangeRequest userTrainingStatusChangeRequest) =>
             TryCatch(async () =>
             {
